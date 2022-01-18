@@ -1,7 +1,32 @@
-.someClass {
+.greeting {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
 
 }
 
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWrap span {
+    margin-top: 10px;
+}
+
 .error {
-    border: 1px solid red;
+    border: 2px solid red;
+    background-color: red;
+}
+
+.right {
+    border: 2px solid green;
+    background-color: green;
+    color: #25fff3;
+}
+
+.errorMessage {
+    color: red;
+    text-transform: uppercase;
 }
