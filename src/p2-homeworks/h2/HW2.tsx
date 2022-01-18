@@ -3,10 +3,8 @@ import Affairs from './Affairs'
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
-export type FilterType = 'all' | AffairPriorityType
 export type AffairType = Array<InAffairsType> // need to fix any
-
-export type DefaultAffairsType = Array<InAffairsType>
+export type FilterType = 'all' | AffairPriorityType
 
 export type InAffairsType = {
     _id: number
@@ -15,7 +13,7 @@ export type InAffairsType = {
 }
 
 // constants
-const defaultAffairs: DefaultAffairsType = [ // need to fix any
+const defaultAffairs: AffairType = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -30,13 +28,13 @@ export const filterAffairs = (affairs: AffairType, filter: FilterType): AffairTy
         return affairs
     }
     if (filter === 'low') {
-        return affairs.filter(f => f.priority === 'low')
+        return affairs.filter(f => f.priority === filter)
     }
     if (filter === 'middle') {
-        return affairs.filter(f => f.priority === 'middle')
+        return affairs.filter(f => f.priority === filter)
     }
     if (filter === 'high') {
-        return affairs.filter(f => f.priority === 'high')
+        return affairs.filter(f => f.priority === filter)
     }
 
     return affairs

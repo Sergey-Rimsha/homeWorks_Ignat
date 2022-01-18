@@ -1,9 +1,9 @@
 import React from 'react'
 import Affair from './Affair'
-import {DefaultAffairsType, FilterType, InAffairsType} from './HW2'
+import {AffairType, FilterType, InAffairsType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
-    data: DefaultAffairsType
+    data: AffairType
     setFilter: (filter: FilterType) => void
     deleteAffairCallback: (_id: number) => void
 }
@@ -14,6 +14,7 @@ function Affairs(props: AffairsPropsType) {
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             id={a._id}
             affair={a.name}
+            priority={a.priority}
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
