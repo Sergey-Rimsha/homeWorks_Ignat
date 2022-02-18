@@ -1,0 +1,47 @@
+
+.header {
+
+}
+
+.panel {
+    display: flex;
+    width: 55px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 0 5px 5px 0;
+    padding-left: 10px;
+    position: relative;
+    transition: .3s;
+
+}
+
+.hidden_panel {
+    display: flex;
+    position: absolute;
+    left: -300px;
+    width: 300px;
+    height: 30px;
+    background-color: grey;
+    transition: .3s;
+}
+
+.hidden_panel a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+.hidden_panel a:active {
+    color: aqua;
+}
+
+.panel:hover {
+    left:0;
+}
+.panel:hover .hidden_panel {
+    left: 55px;
+    border-radius: 5px;
+}
+
+.active {
+    color: aqua;
+}
