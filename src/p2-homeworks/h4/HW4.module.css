@@ -11,3 +11,10 @@
 .testSpanError {
     color: blue;
 }
+
+
+.HW4Box button {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+}

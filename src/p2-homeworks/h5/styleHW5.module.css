@@ -30,9 +30,7 @@
     padding-left: 10px;
     color: white;
 }
-.hidden_panel a:active {
-    color: aqua;
-}
+
 
 .panel:hover {
     left:0;
@@ -42,6 +40,6 @@
     border-radius: 5px;
 }
 
-.active {
-    color: aqua;
-}
+/*.active {*/
+/*    color: aqua;*/
+/*}*/

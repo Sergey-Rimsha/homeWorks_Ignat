@@ -2,6 +2,8 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType, InAffairsType} from './HW2'
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import style from './Affairs.module.css'
+
 
 type AffairsPropsType = { // need to fix any
     data: AffairType
@@ -26,7 +28,7 @@ function Affairs(props: AffairsPropsType) {
     const setLow = () => {props.setFilter('low')}
 
     return (
-        <div>
+        <div className={style.affairsBox}>
 
             {mappedAffairs}
             <SuperButton onClick={setAll}>

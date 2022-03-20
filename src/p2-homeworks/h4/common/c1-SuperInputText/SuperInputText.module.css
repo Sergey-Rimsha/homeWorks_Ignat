@@ -3,9 +3,13 @@
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 1px solid white;
+    background: gray;
+    border-radius: 5px;
+    height: 20px;
+    color: white;
 }
+
 
 .error {
     color: red;

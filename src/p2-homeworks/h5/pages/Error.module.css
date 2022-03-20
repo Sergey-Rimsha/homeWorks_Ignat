@@ -1,0 +1,24 @@
+.errorBox {
+	display: flex;
+	height: 300px;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.errorBox_title {
+	color: red;
+	font-size: 40px;
+}
+
+.errorBox_message {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+.errorBox_body {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+

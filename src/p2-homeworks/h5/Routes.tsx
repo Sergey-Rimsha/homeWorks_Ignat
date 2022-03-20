@@ -9,6 +9,8 @@ import {
 
 export const PATH = {
 	PRE_JUNIOR: '/pre-junior',
+	JUNIOR: '/junior',
+	JUNIOR_PlUS: '/junior_plus'
 	// add paths
 }
 
@@ -24,11 +26,12 @@ function RoutesHW() {
 				<Route path={'/'} element={<PreJunior/>}/>
 
 				<Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
-				<Route path={'/gg'} element={<div>ads</div>}/>
+				<Route path={PATH.JUNIOR} element={<div>junior</div>}/>
+				<Route path={PATH.JUNIOR_PlUS} element={<div>junior+</div>}/>
 				{/*// add routes*/}
 
 				{/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-				<Route path='*' element={<Error404/>}/>
+				<Route path={'/*'} element={<Error404/>}/>
 
 			</Routes>
 
