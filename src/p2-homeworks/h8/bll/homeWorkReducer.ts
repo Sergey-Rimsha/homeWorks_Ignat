@@ -1,28 +1,29 @@
 import {InitialPeopleType} from "../HW8";
 
 export type ActionType = {
-    type: 'sort' | 'check' | 'age'
-    payload: 'up' | 'down' | 18
+    type: 'sort' | 'check'
+    payload: 'up' | 'down' | number
 }
 
 
 export const homeWorkReducer = (state: InitialPeopleType, action: ActionType): InitialPeopleType => {
-    console.log(action.type)
     // need to fix any
     switch (action.type) {
-        case 'sort': {
-           return [...state].sort((a, b) => a.name > b.name ? 1 : -1);
-            // need to fix
-        }
-        case 'check': {
-            // need to fix
+        case 'sort':
+            
+            let sortState = [...state].sort((a, b) => a.name > b.name ? 1 : -1);
 
-            return [...state].sort((a, b) => a.name > b.name ? -1 : 1);
-        }
+            if (action.payload === 'down') {
+                return sortState.reverse();
+            } else {
+                return sortState;
+            }
 
-        case 'age': {
-            return state.filter(user => user.age > action.payload)
-        }
-        // default: return state
+            // need to fix
+        case 'check': 
+            // need to fix
+            return state.filter((user) => user.age > action.payload)
+
+        default: return state
     }
 }
