@@ -1,0 +1,12 @@
+.HW9Wrap button {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.timeItem {
+	height: 18px;
+	margin-left: 15px;
+	font-size: 16px;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
