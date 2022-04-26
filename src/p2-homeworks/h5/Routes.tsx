@@ -7,6 +7,7 @@ import {
 	Route
 } from "react-router-dom";
 import {Junior} from "./pages/Junior";
+import {JuniorPlus} from "./pages/JuniorPlus";
 
 export const PATH = {
 	PRE_JUNIOR: '/pre-junior',
@@ -28,7 +29,7 @@ function RoutesHW() {
 
 				<Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
 				<Route path={PATH.JUNIOR} element={<Junior/>}/>
-				<Route path={PATH.JUNIOR_PlUS} element={<div>junior+</div>}/>
+				<Route path={PATH.JUNIOR_PlUS} element={<JuniorPlus/>}/>
 				{/*// add routes*/}
 
 				{/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
