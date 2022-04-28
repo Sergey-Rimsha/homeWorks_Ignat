@@ -1,0 +1,13 @@
+.request {
+	margin-left: 20px;
+
+	&__info {
+		font-size: 18px;
+		color: green;
+		&_error {
+			font-size: 18px;
+			color: red;
+		}
+	}
+
+}
